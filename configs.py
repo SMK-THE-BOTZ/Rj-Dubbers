@@ -43,7 +43,7 @@ class Config(object):
 	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", -1002121351606))
 	BOT_OWNER = int(os.environ.get("BOT_OWNER", "2058613983"))
 	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://smkthebotz:72gZn3mSwl2ttMrC@cluster0.k87k2x2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002022033362")
+	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002022033362-1001991164752")
 	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1002085310062")
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
