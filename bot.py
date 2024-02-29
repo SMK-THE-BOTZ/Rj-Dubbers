@@ -115,35 +115,35 @@ async def Lazy_start():
                 await cmd.reply_photo(photo=lazy_pic,
                 caption=Config.LAZY_HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
                 reply_markup=InlineKeyboardMarkup(
-                    [
+                                        [
                         [
-                            InlineKeyboardButton("🍿supp⊕r† gr⊕up", url="https://t.me/LazyDeveloperSupport"),
-                            InlineKeyboardButton("🔊ß⊕†s chαηηεl", url="https://t.me/LazyDeveloper")
+                            InlineKeyboardButton("MAIN CHANNEL", url="https://t.me/RJ_Dubbers"),
+                            InlineKeyboardButton("BOT CHANNEL", url="https://t.me/SMKTHEBOTZ")
                         ],
                         [
-                            InlineKeyboardButton("🤖Aß⊕ut ß⊕†", callback_data="aboutbot"),
-                            InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
+                            InlineKeyboardButton("ABOUT BOT", callback_data="aboutbot"),
+                            InlineKeyboardButton("ABOUT DEV", callback_data="aboutdevs")
                         ],
                         [
-                            InlineKeyboardButton("⎝⎝✧✧ ᴡᴀᴛᴄʜ ᴛᴜᴛᴏʀɪᴀʟ ✧✧⎠⎠", url="https://youtu.be/Rtjyz3lEZwE")
+                            InlineKeyboardButton("MAKE BOT like this", url="https://t.me/PAIN_FT_SMK")
                         ]]))
             else :
                 await cmd.reply_photo(photo=lazy_pic,
                 caption=Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
                 reply_markup=InlineKeyboardMarkup(
+                   
                     [
                         [
-                            InlineKeyboardButton("🍿supp⊕r† gr⊕up", url="https://t.me/LazyDeveloperSupport"),
-                            InlineKeyboardButton("🔊ß⊕†s chαηηεl", url="https://t.me/LazyDeveloper")
+                            InlineKeyboardButton("SORCE CODE",
+                                                url="https://t.me/SMKTHEBOTZ")
                         ],
                         [
-                            InlineKeyboardButton("🤖Aß⊕ut ß⊕†", callback_data="aboutbot"),
-                            InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
-                        ],
-                        [
-                            InlineKeyboardButton("⎝⎝✧✧ ᴡᴀᴛᴄʜ ᴛᴜᴛᴏʀɪᴀʟ ✧✧⎠⎠", url="https://youtu.be/Rtjyz3lEZwE")
-                        ]]))
-            
+                            InlineKeyboardButton("GO HOME", callback_data="gotohome"),
+                            InlineKeyboardButton("ABOUT DEV", callback_data="aboutdevs")
+                        ]
+                    ]
+                )
+            )
         else:
             try:
                 try:
@@ -411,41 +411,35 @@ async def Lazy_start():
                 Config.LAZY_HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [
+                                       [
                         [
-                            InlineKeyboardButton("🍿supp⊕r† gr⊕up", url="https://t.me/LazyDeveloperSupport"),
-                            InlineKeyboardButton("🔊ß⊕ts Channel", url="https://t.me/LazyDeveloper")
+                            InlineKeyboardButton("MAIN CHANNEL", url="https://t.me/RJ_Dubbers"),
+                            InlineKeyboardButton("BOT CHANNEL", url="https://t.me/SMKTHEBOTZ")
                         ],
                         [
-                            InlineKeyboardButton("🤖Aß⊕ut ß⊕t", callback_data="aboutbot"),
-                            InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
+                            InlineKeyboardButton("ABOUT BOT", callback_data="aboutbot"),
+                            InlineKeyboardButton("ABOUT DEV", callback_data="aboutdevs")
                         ],
                         [
-                            InlineKeyboardButton("⎝⎝✧✧ ᴡᴀᴛᴄʜ ᴛᴜᴛᴏʀɪᴀʟ ✧✧⎠⎠", url="https://youtu.be/Rtjyz3lEZwE")
-                        ]
-                    ]
-                )
-            )
+                            InlineKeyboardButton("MAKE BOT like this", url="https://t.me/PAIN_FT_SMK")
+                        ]]))
             else :
                 await cmd.message.edit(
                 Config.HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [
+                                       [
                         [
-                            InlineKeyboardButton("🍿supp⊕r† gr⊕up", url="https://t.me/LazyDeveloperSupport"),
-                            InlineKeyboardButton("🔊ß⊕ts Channel", url="https://t.me/LazyDeveloper")
+                            InlineKeyboardButton("MAIN CHANNEL", url="https://t.me/RJ_Dubbers"),
+                            InlineKeyboardButton("BOT CHANNEL", url="https://t.me/SMKTHEBOTZ")
                         ],
                         [
-                            InlineKeyboardButton("🤖Aß⊕ut ß⊕t", callback_data="aboutbot"),
-                            InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
+                            InlineKeyboardButton("ABOUT BOT", callback_data="aboutbot"),
+                            InlineKeyboardButton("ABOUT DEV", callback_data="aboutdevs")
                         ],
                         [
-                            InlineKeyboardButton("⎝⎝✧✧ ᴡᴀᴛᴄʜ ᴛᴜᴛᴏʀɪᴀʟ ✧✧⎠⎠", url="https://youtu.be/Rtjyz3lEZwE")
-                        ]
-                    ]
-                )
-            )
+                            InlineKeyboardButton("MAKE BOT like this", url="https://t.me/PAIN_FT_SMK")
+                        ]]))
 
         elif "refreshForceSub" in cb_data:
             if Config.UPDATES_CHANNEL:
@@ -489,41 +483,35 @@ async def Lazy_start():
                 Config.LAZY_HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [
+                                       [
                         [
-                            InlineKeyboardButton("🍿supp⊕r† gr⊕up", url="https://t.me/LazyDeveloperSupport"),
-                            InlineKeyboardButton("🔊ß⊕ts Channel", url="https://t.me/LazyDeveloper")
+                            InlineKeyboardButton("MAIN CHANNEL", url="https://t.me/RJ_Dubbers"),
+                            InlineKeyboardButton("BOT CHANNEL", url="https://t.me/SMKTHEBOTZ")
                         ],
                         [
-                            InlineKeyboardButton("🤖Aß⊕ut ß⊕t", callback_data="aboutbot"),
-                            InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
+                            InlineKeyboardButton("ABOUT BOT", callback_data="aboutbot"),
+                            InlineKeyboardButton("ABOUT DEV", callback_data="aboutdevs")
                         ],
                         [
-                            InlineKeyboardButton("⎝⎝✧✧ ᴡᴀᴛᴄʜ ᴛᴜᴛᴏʀɪᴀʟ ✧✧⎠⎠", url="https://youtu.be/Rtjyz3lEZwE")
-                        ]
-                    ]
-                )
-            )
+                            InlineKeyboardButton("MAKE BOT like this", url="https://t.me/PAIN_FT_SMK")
+                        ]]))
             else :
                 await cmd.message.edit(
                 Config.HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [
+                                        [
                         [
-                            InlineKeyboardButton("🍿supp⊕r† gr⊕up", url="https://t.me/LazyDeveloperSupport"),
-                            InlineKeyboardButton("🔊ß⊕ts Channel", url="https://t.me/LazyDeveloper")
+                            InlineKeyboardButton("MAIN CHANNEL", url="https://t.me/RJ_Dubbers"),
+                            InlineKeyboardButton("BOT CHANNEL", url="https://t.me/SMKTHEBOTZ")
                         ],
                         [
-                            InlineKeyboardButton("🤖Aß⊕ut ß⊕t", callback_data="aboutbot"),
-                            InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
+                            InlineKeyboardButton("ABOUT BOT", callback_data="aboutbot"),
+                            InlineKeyboardButton("ABOUT DEV", callback_data="aboutdevs")
                         ],
                         [
-                            InlineKeyboardButton("⎝⎝✧✧ ᴡᴀᴛᴄʜ ᴛᴜᴛᴏʀɪᴀʟ ✧✧⎠⎠", url="https://youtu.be/Rtjyz3lEZwE")
-                        ]
-                    ]
-                )
-            )
+                            InlineKeyboardButton("MAKE BOT like this", url="https://t.me/PAIN_FT_SMK")
+                        ]]))
 
         elif cb_data.startswith("ban_user_"):
             user_id = cb_data.split("_", 2)[-1]
