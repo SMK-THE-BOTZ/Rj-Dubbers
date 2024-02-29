@@ -41,7 +41,7 @@ class Config(object):
 	BOT_TOKEN = os.environ.get("BOT_TOKEN","")
 	BOT_USERNAME = os.environ.get("BOT_USERNAME" , "SAKUNA_SMK_BOT")
 	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", -1001694371548))
-	BOT_OWNER = int(os.environ.get("BOT_OWNER", ""))
+	BOT_OWNER = int(os.environ.get("BOT_OWNER", "2058613983"))
 	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://madarauchiha891824:6yUWdhFwTCJTiGCo@cluster0.ufhvlye.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002022033362")
 	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1002057330647")
