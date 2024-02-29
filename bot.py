@@ -560,7 +560,7 @@ async def Lazy_start():
                 )
             except Exception as e:
                 print(e)  # print the error message
-                await cmd.answer(f"☣something went wrong sweetheart\n\n{e}", show_alert=True)
+                await cmd.answer(f"☣something went wrong Bro\n\n{e}", show_alert=True)
                 return
 
 
